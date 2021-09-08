@@ -7,9 +7,8 @@
 --boton-padding:20px 40px;
 }
 
-body {
-    font-family: 'Raleway', sans-serif;
-}
+body {font-family: 'Raleway', sans-serif;
+   }
  
 .container{
 
@@ -196,6 +195,7 @@ border: 1px solid #fff;
     width: 80%;
     margin: 0 auto;
 }
+
 .presentation__cta{
     display:inline-block;
     margin-top: 30px;
