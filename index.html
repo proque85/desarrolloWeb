@@ -6,27 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/valida.js"></script>
     <script src="js/bootstrap.min.js"></script>
+   
     <title>Mi Portafolio</title>
   </head>
   <body>
     <header class="hero">
       <nav class="nav">
         <ul>
-          <li><a href="#" class="nav__items nav__items--cta">contactame</a></li>
           <li>
             <a
-              href="http://127.0.0.1:5500/Desarrollo%20Web/#Sobremi"
-              class="nav__items"
-              >sobre mi</a
+              href="#"
+              class="nav__items nav__items--cta"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              >contactame</a
             >
           </li>
           <li>
-            <a
-              href="http://127.0.0.1:5500/Desarrollo%20Web/#Proyecto"
-              class="nav__items"
+            <a href="../DesarrolloWeb/#Sobremi" class="nav__items">sobre mi</a>
+          </li>
+          <li>
+            <a href="../DesarrolloWeb/#Proyecto" class="nav__items"
               >Proyectos</a
             >
           </li>
@@ -39,7 +43,13 @@
               Hola! soy Roque Potenza. Desarrollador y Diseñador Web!!!!!
             </h1>
             <h2 class="hero__subtitle">Transformado pasiones a realidades</h2>
-            <a href="" class="hero__cta">Contactame</a>
+            <a
+              href="#"
+              class="hero__cta"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              >Contactame</a
+            >
           </div>
         </section>
       </div>
@@ -59,20 +69,81 @@
     <main>
       <div id="Sobremi"></div>
       <div class="wrapper__presentacion">
-        <div class="header__presentacion"> 
-      
-        </div>
-        <div class="main__presentacion"> 
+        <div class="header__presentacion"></div>
+        <div class="main__presentacion">
           <img src="assets/perfil.png" alt="" class="presentation__picture" />
           <h2 class="subtitle">Mi Nombre es: Roque Potenza</h2>
           <p class="presentation__copy">
-            Soy T.S.U e Ingeniero en Informatica  y docente titulado, me apasiona todo lo relacionado 
-            sobre la automatizacion en el desarrollo
-            y diseño Web. Tambien tengo experiencia en el area de soporte tecnico en computación.
-          </p> 
-        <div class="footer__presentacion"><a href="" class="presentation__cta">Contactame ahora</a></div></div>
+            Soy T.S.U e Ingeniero en Informatica y docente titulado, me apasiona
+            todo lo relacionado sobre la automatizacion en el desarrollo y
+            diseño Web. Tambien tengo experiencia en el area de soporte tecnico
+            en computación.
+          </p>
+          <div class="footer__presentacion">
+            <a
+              href="#"
+              class="presentation__cta"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              >Contactame ahora</a
+            >
+          </div>
+          <div>
+            <a class="fab fa-facebook footer__icon" href="#"></a>
+            <a class="fab fa-twitter footer__icon" href="#"></a>
+            <a class="fab fa-instagram footer__icon" href="#"></a>
+          </div>
+        </div>
       </div>
-     <!-- <section class="presentation container">
+      <!--Modal-->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Contacto</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              Saludos. Puedes contactarme por las Redes Sociales o Dejando su
+              correo.
+              <div>
+                <a class="fab fa-facebook footer__icon" href="#"></a>
+                <a class="fab fa-twitter footer__icon" href="#"></a>
+                <a class="fab fa-instagram footer__icon" href="#"></a>
+              </div>
+              Ingrese su correo Electronico:<br>
+              <input type="text" size="60" />
+              <br />
+              Motivo: 
+              <br>
+              <textarea rows="4" cols="60"></textarea>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+              <button type="button" class="btn btn-primary" id="enviarContacto" >Enviar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <section class="presentation container">
         <img src="assets/perfil.png" alt="" class="presentation__picture" />
         <h2 class="subtitle">Mi nombre es: Roque Potenza</h2>
         <p class="presentation__copy">
@@ -83,49 +154,46 @@
         </p>
         <a href="" class="presentation__cta">Contactame ahora</a>
       </section>-->
-      <section class="about container">
+      <section class="about container" id="misHabilidades">
         <div class="about__text">
           <h2 class="subtitle">Mis habilidades:</h2>
-            <div class="accordion" style="width: 400px; height:400px;">
-              <div class="accordion-item" >
-                <h2 class="accordion-header" id="headingOne" >
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Desarrollo web                  
-                  </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <table>
-                      <tr>
-                        <td> <ul>
-                          <li>
-                            HTML
-                          </li>
-                          <li>
-                            CSS
-                          </li>
-                          <li>
-                            JAVASCRIPTS
-                          </li>
-                          <li>
-                            PHP
-                          </li>
-                          <li>
-                            SQL
-                          </li>
-                          <li>
-                            GIT
-                          </li>
-                        </ul>
-                       </td>
-                        <td> 
+          <div class="accordion" style="width: 400px; height: 400px">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Desarrollo web
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <table>
+                    <tr>
+                      <td>
                         <ul>
-                          <li>
-                            Api Graph Twitter.
-                          </li>
-                          <li>
-                            Api Graph De Facebook e Instagram
-                          </li>
+                          <li>HTML</li>
+                          <li>CSS</li>
+                          <li>JAVASCRIPTS</li>
+                          <li>PHP</li>
+                          <li>SQL</li>
+                          <li>GIT</li>
+                        </ul>
+                      </td>
+                      <td>
+                        <ul>
+                          <li>Api Graph Twitter.</li>
+                          <li>Api Graph De Facebook e Instagram</li>
                           <li>
                             Librerias:
                             <ul>
@@ -133,37 +201,43 @@
                               <li>Boostrap</li>
                             </ul>
                           </li>
-                          <li>
-                            PHP
-                          </li>
-                          <li>
-                            SQL
-                          </li>
-                          <li>
-                            GIT
-                          </li>
-                      </ul></td>
-                      </tr>
-                    </table>
-                   
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Diseño Web
-                  </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <ul>
-                      <li>WORDPRESS</li>
-                    </ul>
-                  </div>
+                          <li>PHP</li>
+                          <li>SQL</li>
+                          <li>GIT</li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </table>
                 </div>
               </div>
             </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Diseño Web
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <ul>
+                    <li>WORDPRESS</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <figure class="about__img">
           <img src="assets/habilidades.png" alt="" class="about__picture" />
@@ -174,11 +248,13 @@
         <div class="about__text">
           <h2 class="subtitle">Sobre mi trabajo</h2>
           <p class="about__paragraph">
-            Desde el 2010 he trabajado en diferentes proyectos orientados al desarrollo web 
-            en organizaciones (alcaldia de girardot, gruposeti y asoluces) e independiente como Diseñador Web.
+            Desde el 2010 he trabajado en diferentes proyectos orientados al
+            desarrollo web en organizaciones (alcaldia de girardot, gruposeti y
+            asoluces) e independiente como Diseñador Web.
           </p>
           <p class="about__paragraph">
-           Tambien he impartido clases sobre programacion, Base de Datos y Analisis de Diseño de Sistema 
+            Tambien he impartido clases sobre programacion, Base de Datos y
+            Analisis de Diseño de Sistema
           </p>
         </div>
       </section>
@@ -195,8 +271,7 @@
         </svg>
       </div>
       <section class="projects" id="Proyecto">
-       
-        <div class="container">  
+        <div class="container">
           <h2 class="subtitle">Mis Proyectos</h2>
           <div class="projects__grid">
             <article class="projects__items">
@@ -254,7 +329,7 @@
           </div>
         </div>
       </section>
-   <!--   <section class="testimony container">
+      <!--   <section class="testimony container">
         <h2 class="subtitle">Que dicen de Mi</h2>
         <div class="testimony__grid">
           <article class="testimony__item">
@@ -293,13 +368,25 @@
     <footer class="footer">
       <div class="container footer__grid">
         <nav class="nav--footer">
-          <a href="" class="nav__items nav__items--footer">Inicio</a>
-          <a href="" class="nav__items nav__items--footer">Sobre Mi</a>
-          <a href="" class="nav__items nav__items--footer">Mis Habilidades</a>
-          <a href="" class="nav__items nav__items--footer">Mis Proyectos</a>
+          <a href="#" class="nav__items nav__items--footer">Inicio</a>
+          <a
+            href="../DesarrolloWeb/#Sobremi"
+            class="nav__items nav__items--footer"
+            >Sobre Mi</a
+          >
+          <a
+            href="../DesarrolloWeb/#misHabilidades"
+            class="nav__items nav__items--footer"
+            >Mis Habilidades</a
+          >
+          <a
+            href="../DesarrolloWeb/#Proyecto"
+            class="nav__items nav__items--footer"
+            >Mis Proyectos</a
+          >
         </nav>
         <section class="footer__contact">
-          <h3 class="footer__title">contacteme</h3>
+          <h3 class="footer__title">Contacteme</h3>
           <div class="footer__icons">
             <span class="footer__container-icons">
               <a class="fab fa-facebook-f footer__icon" href="#"></a>
@@ -308,7 +395,7 @@
               <a class="fab fa-twitter footer__icon" href="#"></a>
             </span>
             <span class="footer__container-icons">
-              <a class="fab fa-whatsapp footer__icon" href="#"></a>
+              <a class="fab fa-instagram footer__icon" href="#"></a>
             </span>
           </div>
         </section>
