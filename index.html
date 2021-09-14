@@ -10,7 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/valida.js"></script>
     <script src="js/bootstrap.min.js"></script>
-   
+
     <title>Mi Portafolio</title>
   </head>
   <body>
@@ -40,9 +40,10 @@
         <section class="hero__container">
           <div class="hero__texts">
             <h1 class="hero__title">
-              Hola! soy Roque Potenza. Desarrollador y Diseñador Web!!!!!
+              <p>Hola! soy Roque Potenza.</p>
+              <p>Desarrollador y Diseñador Web!!!!!</p>
             </h1>
-            <h2 class="hero__subtitle">Transformado pasiones a realidades</h2>
+            <h2 class="hero__subtitle">Transformando pasiones a realidades</h2>
             <a
               href="#"
               class="hero__cta"
@@ -72,7 +73,7 @@
         <div class="header__presentacion"></div>
         <div class="main__presentacion">
           <img src="assets/perfil.png" alt="" class="presentation__picture" />
-          <h2 class="subtitle">Mi Nombre es: Roque Potenza</h2>
+          <!--h2 class="subtitle"></-h2>-->
           <p class="presentation__copy">
             Soy T.S.U e Ingeniero en Informatica y docente titulado, me apasiona
             todo lo relacionado sobre la automatizacion en el desarrollo y
@@ -90,7 +91,7 @@
           </div>
           <div>
             <a class="fab fa-facebook footer__icon" href="#"></a>
-            <a class="fab fa-twitter footer__icon" href="#"></a>
+            <a class="fab fa-github footer__icon" href="#"></a>
             <a class="fab fa-instagram footer__icon" href="#"></a>
           </div>
         </div>
@@ -119,15 +120,15 @@
               correo.
               <div>
                 <a class="fab fa-facebook footer__icon" href="#"></a>
-                <a class="fab fa-twitter footer__icon" href="#"></a>
+                <a class="fab fa-github footer__icon" href="#"></a>
                 <a class="fab fa-instagram footer__icon" href="#"></a>
               </div>
-              Ingrese su correo Electronico:<br>
-              <input type="text" size="60" />
+              Ingrese su correo Electronico:<br />
+              <input type="text" size="30" />
               <br />
-              Motivo: 
-              <br>
-              <textarea rows="4" cols="60"></textarea>
+              Motivo:
+              <br />
+              <textarea rows="4" cols="30"></textarea>
             </div>
             <div class="modal-footer">
               <button
@@ -137,7 +138,9 @@
               >
                 Cerrar
               </button>
-              <button type="button" class="btn btn-primary" id="enviarContacto" >Enviar</button>
+              <button type="button" class="btn btn-primary" id="enviarContacto">
+                Enviar
+              </button>
             </div>
           </div>
         </div>
@@ -157,7 +160,7 @@
       <section class="about container" id="misHabilidades">
         <div class="about__text">
           <h2 class="subtitle">Mis habilidades:</h2>
-          <div class="accordion" style="width: 400px; height: 400px">
+          <div class="accordion">
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
                 <button
@@ -178,36 +181,63 @@
                 data-bs-parent="#accordionExample"
               >
                 <div class="accordion-body">
-                  <table>
-                    <tr>
-                      <td>
-                        <ul>
-                          <li>HTML</li>
-                          <li>CSS</li>
-                          <li>JAVASCRIPTS</li>
-                          <li>PHP</li>
-                          <li>SQL</li>
-                          <li>GIT</li>
-                        </ul>
-                      </td>
-                      <td>
-                        <ul>
-                          <li>Api Graph Twitter.</li>
-                          <li>Api Graph De Facebook e Instagram</li>
-                          <li>
-                            Librerias:
-                            <ul>
-                              <li>Jquery</li>
-                              <li>Boostrap</li>
-                            </ul>
-                          </li>
-                          <li>PHP</li>
-                          <li>SQL</li>
-                          <li>GIT</li>
-                        </ul>
-                      </td>
-                    </tr>
-                  </table>
+                  <div class="container__mishabilidades">
+                    <div class="row">
+                      <div class="col">
+                        <span>HTML</span>
+                      </div>
+                      <div class="col">
+                        <span>CSS</span>
+                      </div>
+                      <div class="col">
+                        <span>JAVASCRIPTS</span>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <span>PHP</span>
+                      </div>
+                      <div class="col">
+                        <span>SQL</span>
+                      </div>
+                      <div class="col">
+                        <span>GIT</span>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <span>Api Twitter.</span>
+                      </div>
+                      <div class="col">
+                        <span>Api Facebook</span>
+                      </div>
+                      <div class="col">
+                        <span>Api Instagram</span>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <span> Jquery </span>
+                      </div>
+                      <div class="col">
+                        <span>PHP</span>
+                      </div>
+                      <div class="col">
+                        <span>SQL</span>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <span>GIT</span>
+                      </div>
+                      <div class="col">
+                        <span>Boostrap</span>
+                      </div>
+                      <div class="col">
+                        <span></span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -230,11 +260,7 @@
                 aria-labelledby="headingTwo"
                 data-bs-parent="#accordionExample"
               >
-                <div class="accordion-body">
-                  <ul>
-                    <li>WORDPRESS</li>
-                  </ul>
-                </div>
+                <div class="accordion-body">WORDPRESS</div>
               </div>
             </div>
           </div>
@@ -392,7 +418,7 @@
               <a class="fab fa-facebook-f footer__icon" href="#"></a>
             </span>
             <span class="footer__container-icons">
-              <a class="fab fa-twitter footer__icon" href="#"></a>
+              <a class="fab fa-github footer__icon" href="#"></a>
             </span>
             <span class="footer__container-icons">
               <a class="fab fa-instagram footer__icon" href="#"></a>
