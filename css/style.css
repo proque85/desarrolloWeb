@@ -88,6 +88,11 @@ margin-right: 20px;
 padding: 10px 15px;
 font-weight: inherit;
 }
+
+.nav__items:hover{
+    background-color: #fff;
+    border-radius:5px
+}
 .nav__items--cta{
 border: 1px solid #fff;
 
@@ -277,8 +282,8 @@ font-weight: 300;
     display: grid;
     height: 550px;
     grid-template-areas: 
-    "img1 img1 img2 img4 img3 img6"
-    "img1 img1 img2 img5 img7 img6"
+    "img1 img1 img2 img4 img3"
+    "img1 img1 img2 img5 img6"
     ;
     gap: 10px;
 }
@@ -443,6 +448,7 @@ background: var(--color-primary);
      line-height: 60px;
  }
 
+ 
  .fab.footer__icon{
     line-height: 60px;
  }
